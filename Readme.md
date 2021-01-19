@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Andrey Izosimov](https://up.htmlacademy.ru/htmlcss/30/user/605037).
-* Наставник: `[Иван Жарков](https://htmlacademy.ru/profile/stalyer)`.
+* Наставник: `[Иван 😸 Жарков](https://htmlacademy.ru/profile/stalyer)`.
 
 ---
 

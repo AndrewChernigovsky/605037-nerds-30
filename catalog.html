@@ -4,13 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="apple.png">
+	<link rel="manifest" href="manifest.webmanifest">
 	<title>Nerds - дизайн студия из Краснодара</title>
 </head>
 
 <body>
 	<header>
 		<nav>
-			<a href="index.html"><img src="img/logo.svg" width="160" height="65" alt="Логотип компании Нёрдс"></a>
+			<a href="index.html"><img src="img/logo/logo.svg" width="160" height="65" alt="Логотип компании Нёрдс"></a>
 			<ul>
 				<li><a href="index.html">Студия</a></li>
 				<li><a href="blank.html">Клиенты</a></li>
@@ -24,22 +28,16 @@
 	</header>
 
 	<main>
-
-		<h2>Фильтры</h2>
+		
 		<section>
+			<h2>Фильтры</h2>
 			<h2>Стоимость</h2>
-			<form method="get" action="https://echo.htmlacademy.ru">
-				<fieldset>
-					<legend>Стоимость</legend>
-					<ul>
-						<li>
+				
 							<label>От <input type="text" name="min-interval" value="0"></label>
 							<label>До <input type="text" name="max-interval" value="15000"></label>
-						</li>
-					</ul>
-				</fieldset>
+		
 				<h2>Сетка</h2>
-				<fieldset>
+
 					<legend>Сетка</legend>
 					<ul>
 						<li>
@@ -88,12 +86,13 @@
 		</section>
 
 		<section>
-			<h2>Сортировка</h2>
+			<h2>сортировать</h2>
 			<ul>
-				<li>сортировать</li>
 				<li>по цене</li>
 				<li>по типу</li>
 				<li>по названию</li>
+				<li>по возрастанию</li>
+				<li>по убыванию</li>
 			</ul>
 		</section>
 
@@ -102,49 +101,55 @@
 			<ul>
 				<li>
 					<a href="blank.html">
-					<p>Макет Седона</p>
+						<p>Макет Седона</p>
 					</a>
-					<img src="img/maket_sedona.jpg" width="358" height="578" alt="Макет_Седона">
+					<img src="img/content/maket_sedona.jpg" width="358" height="578" alt="Макет_Седона">
 				</li>
 				<li>
 					<a href="blank.html">
 						<p>Макет Пинк</p>
 					</a>
-					<img src="img/maket_pink.jpg" width="358" height="578" alt="Макет_Пинк">
+					<img src="img/content/maket_pink.jpg" width="358" height="578" alt="Макет_Пинк">
 				</li>
 				<li>
 					<a href="blank.html">
 						<p>Макет Бородински</p>
 					</a>
-					<img src="img/maket_borodinski.jpg" width="358" height="578" alt="Макет_Бородински">>
+					<img src="img/content/maket_borodinski.jpg" width="358" height="578" alt="Макет_Бородински">>
 				</li>
 				<li>
 					<a href="blank.html">
 						<p>Макет Мишка</p>
 					</a>
-					<img src="img/maket_mishka.jpg" width="358" height="578" alt="Макет_Мишка">
+					<img src="img/content/maket_mishka.jpg" width="358" height="578" alt="Макет_Мишка">
 				</li>
 				<li>
 					<a href="blank.html">
 						<p>Макет Учебный</p>
 					</a>
-					<img src="img/maket_study.jpg" width="358" height="578" alt="Макет_Учебный">
+					<img src="img/content/maket_study.jpg" width="358" height="578" alt="Макет_Учебный">
 				</li>
 				<li>
 					<a href="blank.html">
 						<p>Макет Кваст</p>
 					</a>
-					<img src="img/maket_quast.jpg" width="358" height="578" alt="Макет_Кваст">
+					<img src="img/content/maket_quast.jpg" width="358" height="578" alt="Макет_Кваст">
 				</li>
+				
+			</ul>
+
+			<ul>
 				<li><a>1</a></li>
 				<li><a href="blank.html">2</a></li>
 				<li><a href="blank.html">3</a></li>
 				<li><a href="blank.html">Следующая</a></li>
 			</ul>
 		</section>
+
+	<div>
 		<section>
 			<h2>Карта города Краснодар</h2>
-			<img src="img/map_catalog.jpg" width="1140" height="416" alt="Карта города, как до нас добраться">
+			<img src="img/content/map_catalog.jpg" width="1140" height="416" alt="Карта города, как до нас добраться">
 		</section>
 
 		<section>
@@ -153,6 +158,8 @@
 			<p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
 			<a href="blank.html">Напишите нам</a>
 		</section>
+	</div>	
+		
 
 	</main>
 

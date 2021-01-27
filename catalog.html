@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<nav>
-			<a href="index.html"><img src="img/logo.svg" width="160" height="65"  alt="Логотип компании Нёрдс"></a>
+			<a href="index.html"><img src="img/logo.svg" width="160" height="65" alt="Логотип компании Нёрдс"></a>
 			<ul>
 				<li><a href="index.html">Студия</a></li>
 				<li><a href="blank.html">Клиенты</a></li>
@@ -24,28 +24,21 @@
 	</header>
 
 	<main>
-		<section>
-			<h2>Фильтры</h2>
-			<ul>
-				<li>стоимость</li>
-				<li>сортировать</li>
-				<li>по цене</li>
-				<li>по типу</li>
-				<li>по названию</li>
-			</ul>
-		</section>
 
+		<h2>Фильтры</h2>
 		<section>
-			<h2>Калькулятор</h2>
-			<form>
-				<label>От <input type="text" name="min-interval" value="0"></label>
-				<label>До <input type="text" name="max-interval" value="15000"></label>
-			</form>
-		</section>
-
-		<section>
-			<h2>Cетка</h2>
+			<h2>Стоимость</h2>
 			<form method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Стоимость</legend>
+					<ul>
+						<li>
+							<label>От <input type="text" name="min-interval" value="0"></label>
+							<label>До <input type="text" name="max-interval" value="15000"></label>
+						</li>
+					</ul>
+				</fieldset>
+				<h2>Сетка</h2>
 				<fieldset>
 					<legend>Сетка</legend>
 					<ul>
@@ -66,11 +59,11 @@
 
 				<h2>Особенности</h2>
 				<fieldset>
-					<legend>Производители:</legend>
+					<legend>Особенности</legend>
 					<ul>
 						<li>
-							<input type="checkbox" name="slaider" id="filter-of-slaider" checked>
-							<label for="filter-of-slaider">Слайдер</label>
+							<input type="checkbox" name="slider" id="filter-of-slider" checked>
+							<label for="filter-of-slider">Слайдер</label>
 						</li>
 						<li>
 							<input type="checkbox" name="advantage" id="filter-advantage">
@@ -90,63 +83,87 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button type="button">Показать</button>
+				<button type="submit">Показать</button>
 			</form>
+		</section>
+
+		<section>
+			<h2>Сортировка</h2>
+			<ul>
+				<li>сортировать</li>
+				<li>по цене</li>
+				<li>по типу</li>
+				<li>по названию</li>
+			</ul>
 		</section>
 
 		<section>
 			<h2>макеты</h2>
 			<ul>
 				<li>
+					<a href="blank.html">
 					<p>Макет Седона</p>
-					<a><img src="img/maket_sedona.jpg" width="358" height="578" alt="Макет_Седона"></a>
+					</a>
+					<img src="img/maket_sedona.jpg" width="358" height="578" alt="Макет_Седона">
 				</li>
 				<li>
-					<p>Макет Пинк</p>
-					<a><img src="img/maket_pink.jpg" width="358" height="578" alt="Макет_Пинк"></a>
+					<a href="blank.html">
+						<p>Макет Пинк</p>
+					</a>
+					<img src="img/maket_pink.jpg" width="358" height="578" alt="Макет_Пинк">
 				</li>
 				<li>
-					<p>Макет Бородински</p>
-					<a><img src="img/maket_borodinski.png" width="358" height="578" alt="Макет_Бородински"></a>
+					<a href="blank.html">
+						<p>Макет Бородински</p>
+					</a>
+					<img src="img/maket_borodinski.jpg" width="358" height="578" alt="Макет_Бородински">>
 				</li>
 				<li>
-					<p>Макет Мишка</p>
-					<a><img src="img/maket_mishka.png" width="358" height="578" alt="Макет_Мишка"></a>
+					<a href="blank.html">
+						<p>Макет Мишка</p>
+					</a>
+					<img src="img/maket_mishka.jpg" width="358" height="578" alt="Макет_Мишка">
 				</li>
 				<li>
-					<p>Макет Учебный</p>
-					<a><img src="img/maket_study.png" width="358" height="578" alt="Макет_Учебный"></a>
+					<a href="blank.html">
+						<p>Макет Учебный</p>
+					</a>
+					<img src="img/maket_study.jpg" width="358" height="578" alt="Макет_Учебный">
 				</li>
 				<li>
-					<p>Макет Кваст</p>
-					<a><img src="img/maket_quast.png" width="358" height="578" alt="Макет_Кваст"></a>
+					<a href="blank.html">
+						<p>Макет Кваст</p>
+					</a>
+					<img src="img/maket_quast.jpg" width="358" height="578" alt="Макет_Кваст">
 				</li>
+				<li><a>1</a></li>
+				<li><a href="blank.html">2</a></li>
+				<li><a href="blank.html">3</a></li>
+				<li><a href="blank.html">Следующая</a></li>
 			</ul>
 		</section>
-
-		<div>
-			<a href="blank.html">1</a>
-			<a href="blank.html">2</a>
-			<a href="blank.html">3</a>
-			<a href="blank.html">Следующая</a>
-		</div>
-
 		<section>
 			<h2>Карта города Краснодар</h2>
 			<img src="img/map_catalog.jpg" width="1140" height="416" alt="Карта города, как до нас добраться">
 		</section>
+
+		<section>
+			<h2>NЁRDS DESIGN STUDIO</h2>
+			<p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+			<p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+			<a href="blank.html">Напишите нам</a>
+		</section>
+
 	</main>
 
 	<footer>
 		<section>
 			<h2>Логотипы социальных сетей</h2>
-			<a href="blank.html"><img src="img/icons/vk-icon.svg" alt="иконка вконтаке"></a>
-			<a href="blank.html"><img src="img/icons/fb-icon.svg" alt="иконка фейсбук"></a>
-			<a href="blank.html"><img src="img/icons/insta-icon.svg" alt="иконка инстаграм"></a>
+			<a href="blank.html"><img src="img/icons/vk-icon.svg" width="26" height="15" alt="иконка вконтаке"></a>
+			<a href="blank.html"><img src="img/icons/fb-icon.svg" width="26" height="15" alt="иконка фейсбук"></a>
+			<a href="blank.html"><img src="img/icons/insta-icon.svg" width="26" height="15" alt="иконка инстаграм"></a>
 		</section>
-		<h2>
-			Давайте дружить, это выгодно!
-		</h2>
+		<p>Давайте дружить, это выгодно!</p>
 		<p>Скидка 10% для друзей из социальных сетей.</p>
 	</footer>
 </body>

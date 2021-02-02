@@ -75,6 +75,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 ul {
@@ -391,4 +392,39 @@ ul {
 }
 .contacts-phone {
   margin-bottom: 37px;
+}
+
+/* Filters */
+
+.filter-maket-list{
+
+}
+.filter-maket-item{
+  list-style-type: none;
+}
+.border-none {
+  border: none;
+}
+.filter-sort{
+
+}
+
+.filter-sort-list{
+
+}
+
+.filter-sort-item{
+  list-style-type: none;
+}
+
+.product-maket{
+
+}
+
+.product-maket-list{
+
+}
+
+.product-maket-item{
+  list-style-type: none;
 }

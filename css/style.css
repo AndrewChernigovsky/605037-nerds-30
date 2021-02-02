@@ -133,16 +133,49 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  text-transform: uppercase;
+
 }
 .navigation-items {
   list-style-type: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  color: var(--basic-black);
 }
-.shopping_cart {
+.navigation-items a:visited {
+  color: var(--basic-black);
 
 }
+.navigation-items a:hover {
+  color: var(--basic-red);
+
+}
+
+.navigation-items a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+
+}
+
+
+
+.shopping_cart {
+  text-transform: uppercase;
+}
+
+.shopping_cart:visited {
+  color: var(--basic-black);
+}
+
+.shopping_cart:hover {
+  color: var(--basic-red);
+}
+.shopping_cart:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 
 /* Buttons */
 .button{

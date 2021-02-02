@@ -35,10 +35,10 @@
 		<section class="filter-cost">
 
 			<h2>Стоимость</h2>
-			<form>
-				<fieldset class="border-none">
-				<label>От <input type="text" name="min-interval" value="0"></label>
-				<label>До <input type="text" name="max-interval" value="15000"></label>
+			<form class="form-filter">
+				<fieldset class="border-none padding-none">
+				<label class="filter-min">От <input type="text" name="min-interval" value="0"></label>
+				<label class="filter-max">До <input type="text" name="max-interval" value="15000"></label>
 
 				<h2>Сетка</h2>
 
@@ -59,7 +59,7 @@
 				</fieldset>
 
 				<h2>Особенности</h2>
-				<fieldset class="border-none">
+				<fieldset class="border-none padding-none">
 					<legend class="visually-hidden">Особенности</legend>
 					<ul class="filter-maket-list">
 						<li class="filter-maket-item">
@@ -84,7 +84,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button type="submit">Показать</button>
+				<button class="btn-show" type="submit">Показать</button>
 			</form>
 		</section>
 
@@ -141,40 +141,40 @@
 
 			</ul>
 
-			<ul>
-				<li><a>1</a></li>
-				<li><a href="blank.html">2</a></li>
-				<li><a href="blank.html">3</a></li>
-				<li><a href="blank.html">Следующая</a></li>
+			<ul class="pagination">
+				<li class="pagination-item"><a class="btn-pagination">1</a></li>
+				<li class="pagination-item"><a class="btn-pagination" href="blank.html">2</a></li>
+				<li class="pagination-item"><a class="btn-pagination" href="blank.html">3</a></li>
+				<li class="pagination-item-next"><a class="btn-pagination btn-pagination-next" href="blank.html">Следующая</a></li>
 			</ul>
 		</section>
 
-		<div>
-			<section>
+		<div class="contacts">
+			<section class="contacts-map">
 				<h2 class="visually-hidden">Карта города Краснодар</h2>
 				<img src="img/content/map-main.png" width="1440" height="416"
 					alt="Карта города, как до нас добраться">
 			</section>
 
-			<section>
-				<h2>NЁRDS DESIGN STUDIO</h2>
-				<p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-				<p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-				<a href="blank.html">Напишите нам</a>
-			</section>
+      <section class="popup-contacts">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts-phone"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+        <a class="button btn-writeus" href="blank.html">Напишите нам</a>
+      </section>
 		</div>
 
 
 	</main>
 
-	<footer class="main-footer">
+	<footer class="main-footer container">
 		<section class="footer-social">
 			<h2 class="visually-hidden">Логотипы социальных сетей</h2>
-			<a href="blank.html"><img src="img/icons/vk-icon.svg" width="26" height="15" alt="иконка вконтаке"></a>
-			<a href="blank.html"><img src="img/icons/fb-icon.svg" width="26" height="15" alt="иконка фейсбук"></a>
-			<a href="blank.html"><img src="img/icons/insta-icon.svg" width="26" height="15" alt="иконка инстаграм"></a>
+			<a class="btn-social" href="blank.html"><img class="icon-active"  src="img/icons/vk-icon.svg" width="26" height="15" alt="иконка вконтаке"></a>
+			<a class="btn-social" href="blank.html"><img class="icon-active"  src="img/icons/fb-icon.svg" width="26" height="15" alt="иконка фейсбук"></a>
+			<a class="btn-social" href="blank.html"><img class="icon-active"  src="img/icons/insta-icon.svg" width="26" height="15" alt="иконка инстаграм"></a>
 		</section>
-		<p>Давайте дружить, это выгодно!</p>
+		<p class="text-prefer-footer">Давайте дружить, это выгодно!</p>
 		<p>Скидка 10% для друзей из социальных сетей.</p>
 	</footer>
 </body>

@@ -1,6 +1,361 @@
-Variables
+/* Fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format(woff2),
+  url("../fonts/roboto.woff") format(woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format(woff2),
+  url("../fonts/robotomedium.woff") format(woff);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format(woff2),
+  url("../fonts/roboto.woff") format(woff);
+  font-weight: 700;
+  font-style: normal;
+}
 
+/* Variables */
 
+:root{
+
+  /* Gray */
+--basic-gray: #EEEEEE;
+--basic-darkgray: #4D4D4D;
+--basic-lightgray: rgba(77,77,77,0.12);
+--basic-btn-gray: rgba(77,77,77,0.4);
+--basic-icons-gray: #E1E1E1;
+--basic-hover-gray: #DFDFDF;
+--basic-active-gray: #D5D5D5;
+--basic-br-gray: #DBDBDB;
+--basic-link-gray: rgba(166,166,166,0.2);
+--basic-linkhover-gray: rgba(166,166,166, 1);
+--basic-linkactive-gray: #231F20;
+
+/* Red */
+--basic-red: #FB565A;
+--basic-hover-red: #E74246;
+--basic-active-red: #D7373B;
+--basic-link-red: rgba(251,86,90,0.3);
+--basic-linkactive-red: rgba(251,86,90,0.1);
+
+/* Green */
+--basic-green: #00CA74;
+--basic-hover-green: #00BC6C;
+--basic-active-green: #00AA62;
+
+/* Yellow */
+--basic-yellow: #EFC849;
+--basic-hover-yellow: #EAB534;
+--basic-active-yellow: #E5A722;
+
+/* Classic */
+--basic-white: #ffffff;
+--basic-black: #000000;
+
+}
+
+/* Global */
 body {
-    background-color: white;
+    background-color: var(--basic-white);
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.page {
+}
+.page-body {
+  min-width: 1920px;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* Sections slider */
+.slide-first-advantage{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.slide-first-advantage h2 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slide-first-advantage p {
+  margin-bottom: 38px;
+}
+
+
+/* Navigation menu */
+.main-header{
+  font-weight: 500;
+}
+.main-header a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+.main-navigation{
+
+}
+.main-header-logo{
+
+}
+.site-navigation {
+
+}
+.site-navigation a{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+.navigation-items {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+.shopping_cart {
+
+}
+
+/* Buttons */
+.button{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 160px;
+  height: 50px;
+  background-color: var(--basic-red);
+  padding: 17px 40px;
+  color: var(--basic-white);
+}
+.button:active {
+  color: rgba(255,255,255,0.3);
+}
+.btn-more {
+  background-color: var(--basic-red);
+  width: 160px;
+  height: 50px;
+}
+.btn-more:hover {
+  background-color: var(--basic-hover-red);
+}
+.btn-more:active {
+  background-color: var(--basic-active-red);
+}
+.btn-red-order {
+  background-color: var(--basic-red);
+}
+.btn-red-order:hover {
+  background-color: var(--basic-hover-red);
+}
+.btn-red-order:active {
+  background-color: var(--basic-active-red);
+}
+.btn-green-order {
+  background-color: var(--basic-green);
+}
+.btn-green-order:hover {
+  background-color: var(--basic-hover-green);
+}
+.btn-green-order:active {
+  background-color: var(--basic-active-green);
+}
+
+.btn-yellow-order{
+  background-color: var(--basic-yellow);
+}
+
+.btn-yellow-order:hover {
+  background-color: var(--basic-hover-yellow);
+}
+.btn-yellow-order:active {
+  background-color: var(--basic-active-yellow);
+}
+.btn-social {
+  background-color: var(--basic-icons-gray);
+  border-radius: 50%;
+  padding: 30px 30px;
+  margin: 76px 9px;
+}
+
+.btn-social:first-child {
+  margin: 76px 0px;
+}
+
+.btn-writeus {
+  background-color: var(--basic-red);
+  width: 160px;
+  height: 50px;
+  margin: 37px auto;
+}
+.btn-writeus:hover {
+  background-color: var(--basic-hover-red);
+}
+.btn-writeus:active {
+  background-color: var(--basic-active-red);
+}
+.btn-social:hover {
+  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+.btn-social:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+
+}
+.icon-active:active{
+ opacity: 0.3;
+}
+
+/* Section services */
+.services {
+
+}
+.services-list {
+  list-style-type: none;
+  padding: 0;
+}
+.services-item {
+
+}
+.services-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 32px 0;
+}
+.services-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+/* Section features */
+.features {
+
+}
+.features h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.features h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.features p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.features-list {
+  list-style-type: none;
+}
+.features-item{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Section advantage */
+.advantages {
+
+}
+.advantages h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.advantages-list {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+.advantages-item p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Section partnership */
+.partnership {
+
+}
+.partnership-list {
+  list-style-type: none;
+}
+.partnership-item {
+  margin: 46px auto;
+  opacity: 0.2;
+}
+
+.partnership-item:hover {
+  opacity: 1;
+}
+
+.partnership-item:active {
+  opacity: 0.1;
+}
+
+
+
+/* Footer */
+.footer-social {
+  margin-top: 76px;
+  margin-bottom: 76px;
+}
+.footer-social h2 {
+
+}
+.main-footer p {
+}
+.main-footer {
+
+}
+.text-prefer-footer {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+
+/* Pop-up */
+.popup-contacts {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+.contacts-phone {
+  margin-bottom: 37px;
 }

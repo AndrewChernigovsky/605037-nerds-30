@@ -15,8 +15,8 @@
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto.woff2") format(woff2),
-  url("../fonts/roboto.woff") format(woff);
+  src: url("../fonts/robotobold.woff2") format(woff2),
+  url("../fonts/robotobold.woff") format(woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -67,7 +67,7 @@ body {
     min-width: 1440px;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", "Arial", sans;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -78,14 +78,10 @@ a {
   color: var(--basic-black);
 }
 
-ul {
-  padding: 0;
-}
-
 .page {
 }
 .page-body {
-  min-width: 1920px;
+
 }
 .page-body h1{
   font-weight: 500;
@@ -128,8 +124,14 @@ ul {
   line-height: 30px;
 }
 .main-navigation{
-
+  padding: 0;
 }
+
+.main-navigation ul{
+  padding: 0;
+ }
+
+
 .main-header-logo{
   color: var(--basic-black);
 
@@ -322,11 +324,13 @@ ul {
 }
 .features-list {
   list-style-type: none;
+  padding: 0;
 }
 .features-item{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
 }
 
 /* Section advantage */
@@ -344,6 +348,7 @@ ul {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
+  padding: 0;
 }
 .advantages-item p {
   font-weight: 500;
@@ -357,6 +362,7 @@ ul {
 }
 .partnership-list {
   list-style-type: none;
+  padding: 0;
 }
 .partnership-item {
   margin: 46px auto;

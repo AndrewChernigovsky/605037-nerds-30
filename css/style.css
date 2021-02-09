@@ -58,30 +58,48 @@
 /* Classic */
 --basic-white: #ffffff;
 --basic-black: #000000;
+--basic-text-gray:#283136;
 
 }
 
 /* Global */
-body {
-    background-color: var(--basic-white);
-    min-width: 1440px;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
 
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
+
 a {
   text-decoration: none;
   color: var(--basic-black);
 }
 
 .page {
+  height: 100%;
 }
-.page-body {
 
+.page-body {
+  background-color: var(--basic-white);
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-black);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 .page-body h1{
   font-weight: 500;
@@ -90,18 +108,41 @@ a {
 }
 
 .container {
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
+  padding: 0 10px;
+
 }
 .visually-hidden {
   visibility: hidden;
+  display: none;
 }
+
+.main {
+  margin-top: 0;
+  background-color: var(--basic-white);
+}
+
+.main h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.main p {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
 
 /* Sections slider */
 .slide-first-advantage{
+  margin-top: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 80px;
+  background-color: var(--basic-gray);
+  padding-bottom: 95px;
 }
 .slide-first-advantage h2 {
   font-weight: 500;
@@ -112,11 +153,17 @@ a {
 .slide-first-advantage p {
   margin-bottom: 38px;
 }
-
+.main p{
+ color: var(--basic-text-gray);
+ margin-bottom: 38px;
+}
 
 /* Navigation menu */
 .main-header{
   font-weight: 500;
+  display: grid;
+  background-color:var(--basic-gray);
+  padding-bottom: 80px;
 }
 .main-header a {
   font-weight: 500;
@@ -124,16 +171,38 @@ a {
   line-height: 30px;
 }
 .main-navigation{
-  padding: 0;
+  grid-template-columns: min-content 1fr min-content;
+  display: grid;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-white);
+  background-color: transparent;
+
 }
 
 .main-navigation ul{
   padding: 0;
  }
 
+/* .main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  margin: 0 auto;
+  padding: 20px 0px;
+} */
+
+.main-navigation-wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding-top: 75px;
+}
+
 
 .main-header-logo{
   color: var(--basic-black);
+  padding-top: 45px;
 
 }
 .main-header-logo img:active {
@@ -141,8 +210,15 @@ a {
 }
 
 .site-navigation {
-
+    padding: 0;
+    margin: 0;
 }
+
+.navigation-items {
+  display: inline;
+  margin-right: 31px;
+}
+
 .site-navigation a{
   font-weight: 500;
   font-size: 16px;
@@ -157,34 +233,29 @@ a {
   line-height: 30px;
   color: var(--basic-black);
 }
-.navigation-items a:visited {
-  color: var(--basic-black);
-
-}
-.navigation-items a:hover {
-  color: var(--basic-red);
-
-}
-
-.navigation-items a:active {
-  color: var(--basic-black);
-  opacity: 0.3;
-  padding-bottom: 13px;
-  border-bottom: 2px solid var(--basic-red);
-}
 
 .shopping_cart {
   text-transform: uppercase;
 }
 
-.shopping_cart:visited {
-  color: var(--basic-black);
+.cart {
+  display: flex;
+  align-items: center;
+  padding-top: 75px;
+  min-height: 30px;
+  position: relative;
 }
 
-.shopping_cart:hover {
+.cart img{
+  position: absolute;
+  right: 100px;
+}
+
+.hover-link:hover {
   color: var(--basic-red);
 }
-.shopping_cart:active {
+
+.hover-link:active {
   color: var(--basic-black);
   opacity: 0.3;
   padding-bottom: 13px;
@@ -196,21 +267,24 @@ a {
 .button{
   font-weight: 500;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 45px;
   text-transform: uppercase;
-  width: 160px;
-  height: 50px;
+  cursor: pointer;
+  text-align: center;
   background-color: var(--basic-red);
-  padding: 17px 40px;
   color: var(--basic-white);
 }
 .button:active {
   color: rgba(255,255,255,0.3);
 }
+
+/* Кнопка узнать больше */
 .btn-more {
   background-color: var(--basic-red);
-  width: 160px;
+  width: 240px;
   height: 50px;
+  display: block;
+  border-radius: 3px;
 }
 .btn-more:hover {
   background-color: var(--basic-hover-red);
@@ -218,8 +292,14 @@ a {
 .btn-more:active {
   background-color: var(--basic-active-red);
 }
+
+/* Кнопка Заказать Веб-Сайты */
 .btn-red-order {
   background-color: var(--basic-red);
+  width: 160px;
+  height: 50px;
+  display: block;
+  border-radius: 3px;
 }
 .btn-red-order:hover {
   background-color: var(--basic-hover-red);
@@ -227,8 +307,14 @@ a {
 .btn-red-order:active {
   background-color: var(--basic-active-red);
 }
+
+/* Кнопка Заказать Приложения */
 .btn-green-order {
   background-color: var(--basic-green);
+  width: 160px;
+  height: 50px;
+  display: block;
+  border-radius: 3px;
 }
 .btn-green-order:hover {
   background-color: var(--basic-hover-green);
@@ -237,8 +323,14 @@ a {
   background-color: var(--basic-active-green);
 }
 
+/* Кнопка Заказать Презентации */
+
 .btn-yellow-order{
   background-color: var(--basic-yellow);
+  width: 160px;
+  height: 50px;
+  display: block;
+  border-radius: 3px;
 }
 
 .btn-yellow-order:hover {
@@ -247,24 +339,13 @@ a {
 .btn-yellow-order:active {
   background-color: var(--basic-active-yellow);
 }
+
+/* Кнопки иконки социальных сетей */
 .btn-social {
   background-color: var(--basic-icons-gray);
   border-radius: 50%;
   padding: 30px 30px;
   margin: 76px 9px;
-}
-
-.btn-writeus {
-  background-color: var(--basic-red);
-  width: 160px;
-  height: 50px;
-  margin: 37px auto;
-}
-.btn-writeus:hover {
-  background-color: var(--basic-hover-red);
-}
-.btn-writeus:active {
-  background-color: var(--basic-active-red);
 }
 .btn-social:hover {
   background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
@@ -277,13 +358,33 @@ a {
  opacity: 0.3;
 }
 
+/* Кнопка модальное окно Напишите Нам */
+.btn-write {
+  background-color: var(--basic-red);
+  width: 219px;
+  height: 50px;
+  display: block;
+  border-radius: 3px;
+  margin: 0px auto;
+}
+.btn-write:hover {
+  background-color: var(--basic-hover-red);
+}
+.btn-write:active {
+  background-color: var(--basic-active-red);
+}
+
 /* Section services */
 .services {
-
+  padding: 0px;
 }
 .services-list {
   list-style-type: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  gap: 100px;
+  margin-bottom: 80px;
 }
 .services-item {
 
@@ -294,6 +395,8 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   margin: 32px 0;
+  margin-top: 25px;
+  margin-bottom: 16px;
 }
 .services-item p {
   font-weight: 400;
@@ -303,8 +406,18 @@ a {
 }
 
 /* Section features */
-.features {
 
+.wrapper-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .features h2 {
   font-weight: 500;
@@ -330,18 +443,50 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding-bottom: 39px;
+}
+
+.adress-map {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  right: 140px;
 
 }
 
+.adress-map-wrapper {
+  display: flex;
+
+}
+
+.map-krasnodar {
+  width: 1160px;
+}
+
+.map-krasnodar-wrapper{
+  width: ;
+
+}
+
+.map-krasnodar-wrapper img {
+  width: 1440px;
+
+}
+
+
 /* Section advantage */
 .advantages {
-
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .advantages h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-bottom: 31px;
 }
 .advantages-list {
   list-style-type: none;
@@ -349,11 +494,18 @@ a {
   font-size: 45px;
   line-height: 64px;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .advantages-item p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+
+.wrapper-features-advantages {
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
 
 /* Section partnership */
@@ -363,6 +515,9 @@ a {
 .partnership-list {
   list-style-type: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
 }
 .partnership-item {
   margin: 46px auto;
@@ -379,8 +534,7 @@ a {
 
 /* Footer */
 .footer-social {
-  margin-top: 76px;
-  margin-bottom: 76px;
+  margin: 76px auto;
 }
 
 .footer-social h2+a {
@@ -391,11 +545,21 @@ a {
 .footer-social h2 {
 
 }
-.main-footer p {
-}
 .main-footer {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
 
 }
+.main-footer p {
+}
+
+.text-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
 .text-prefer-footer {
   font-size: 36px;
   line-height: 36px;
@@ -407,9 +571,64 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .contacts-phone {
   margin-bottom: 37px;
+}
+
+.maket-popup {
+  background-color: var(--basic-gray);
+  width: 360px;
+  height: 231px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 26px;
+
+}
+
+.maket-popup h2{
+  text-transform: uppercase;
+
+}
+
+
+.maket-popup p{
+  margin-bottom: 36px;
+
+}
+
+.popup-contacts-wrapper {
+  text-align: center;
+  padding: 45px 0;
+
+}
+
+.adress {
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-white);
+  position: absolute;
+  top: 50px;
+  left: 140px;
+  z-index: 10;
+  opacity: 0;
+
+}
+
+.adress-map:hover .adress {
+  display: block;
+  opacity:1;
+  transition: 1s;
+
+}
+
+.btn-maket{
+ padding: 16px 73.5px;
+
 }
 
 /* Filters */
@@ -495,20 +714,8 @@ line-height: 22px;
   margin: 10px 10px;
   box-sizing: border-box;
   background: var(--basic-br-gray);
-}
-
-/* .btn-pagination:link {
-  background: var(--basic-br-gray);
   border: 3px solid var(--basic-br-gray);
-  box-sizing: border-box;
 }
-
-.btn-pagination:visited {
-  background: var(--basic-br-gray);
-  border: 3px solid var(--basic-br-gray);
-  box-sizing: border-box;
-}
-*/
 
 .btn-pagination:hover {
   background: var(--basic-white);

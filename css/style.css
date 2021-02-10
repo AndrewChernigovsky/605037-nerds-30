@@ -28,6 +28,7 @@
   /* Gray */
 --basic-gray: #EEEEEE;
 --basic-darkgray: #4D4D4D;
+--textarea: #a2a2a2;
 --basic-lightgray: rgba(77,77,77,0.12);
 --basic-btn-gray: rgba(77,77,77,0.4);
 --basic-icons-gray: #E1E1E1;
@@ -133,6 +134,20 @@ a {
   margin-bottom: 25px;
 }
 
+.heading {
+  display: grid;
+
+}
+
+.heading h1 {
+  justify-self: center;
+}
+
+.wrapper-maket-filter {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+}
 
 /* Sections slider */
 .slide-first-advantage{
@@ -184,12 +199,6 @@ a {
   padding: 0;
  }
 
-/* .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  margin: 0 auto;
-  padding: 20px 0px;
-} */
 
 .main-navigation-wrapper {
   margin: 0 auto;
@@ -246,11 +255,6 @@ a {
   position: relative;
 }
 
-.cart img{
-  position: absolute;
-  right: 100px;
-}
-
 .hover-link:hover {
   color: var(--basic-red);
 }
@@ -258,12 +262,26 @@ a {
 .hover-link:active {
   color: var(--basic-black);
   opacity: 0.3;
-  padding-bottom: 13px;
-  border-bottom: 2px solid var(--basic-red);
+
 }
 
-
 /* Buttons */
+
+/* Кнопка модального окна, напишите нам, карта */
+
+.submit {
+  width: 259px;
+  height: 50px;
+  border-radius: 3px;
+}
+.submit:hover {
+  background-color: var(--basic-hover-red);
+  }
+.submit:active {
+  background-color: var(--basic-active-red);
+}
+
+/* Общий класс для кнопок */
 .button{
   font-weight: 500;
   font-size: 16px;
@@ -344,16 +362,28 @@ a {
 .btn-social {
   background-color: var(--basic-icons-gray);
   border-radius: 50%;
-  padding: 30px 30px;
-  margin: 76px 9px;
+  width: 81px;
+  height: 81px;
+  margin: 0px 9px;
+  position: relative;
 }
 .btn-social:hover {
   background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
 }
 .btn-social:active {
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
-
 }
+
+.btn-social img{
+  position: absolute;
+  left: 30px;
+  top: 25px;
+}
+
+.btn-social:last-child{
+  margin-right: 0px;
+}
+
 .icon-active:active{
  opacity: 0.3;
 }
@@ -372,6 +402,74 @@ a {
 }
 .btn-write:active {
   background-color: var(--basic-active-red);
+}
+
+/* Кнопка на макете цена */
+.btn-maket{
+  padding: 16px 73.5px;
+ }
+
+/* Кнопки пагинации */
+ .btn-pagination {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: var(--basic-gray);
+  border-radius: 3px;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  background: var(--basic-br-gray);
+  border: 3px solid var(--basic-br-gray);
+}
+
+.btn-pagination:hover {
+  background: var(--basic-white);
+  border: 3px solid var(--basic-br-gray);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.btn-pagination:active {
+  background: var(--basic-active-gray);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.btn-pagination-next {
+  width: 260px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  background-color: var(--basic-gray);
+  border-radius: 3px;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  background: var(--basic-br-gray);
+}
+
+/* Кнопка показать каталог */
+.btn-show {
+  background-color: var(--basic-gray);
+  width: 260px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+}
+
+.btn-show:hover {
+  cursor: pointer;
+  background-color: var(--basic-hover-gray);
+}
+
+.btn-show:active {
+  background-color: var(--basic-active-gray);
+  opacity: 0.3;
+
 }
 
 /* Section services */
@@ -446,34 +544,6 @@ a {
   padding-bottom: 39px;
 }
 
-.adress-map {
-  position: relative;
-  z-index: 9;
-  display: flex;
-  right: 140px;
-
-}
-
-.adress-map-wrapper {
-  display: flex;
-
-}
-
-.map-krasnodar {
-  width: 1160px;
-}
-
-.map-krasnodar-wrapper{
-  width: ;
-
-}
-
-.map-krasnodar-wrapper img {
-  width: 1440px;
-
-}
-
-
 /* Section advantage */
 .advantages {
   text-align: center;
@@ -533,8 +603,16 @@ a {
 }
 
 /* Footer */
+
+.main-footer {
+}
+
+.main-footer p {
+}
+
 .footer-social {
   margin: 76px auto;
+  display: flex;
 }
 
 .footer-social h2+a {
@@ -545,12 +623,14 @@ a {
 .footer-social h2 {
 
 }
-.main-footer {
-  display: grid;
-  grid-template-columns: 3fr 7fr;
 
+.map-krasnodar-wrapper{
+  display: flex;
+  justify-content: center;
 }
-.main-footer p {
+
+.map-krasnodar-wrapper img {
+  width: 1440px;
 }
 
 .text-footer {
@@ -576,10 +656,84 @@ a {
   flex-direction: column;
   justify-content: space-around;
 }
+.adress {
+  position: relative;
+}
 .contacts-phone {
   margin-bottom: 37px;
 }
 
+.popup-email {
+  position: relative;
+  display: flex;
+  justify-content: center;
+ }
+
+ .hidden-popup-email {
+   display: none;
+ }
+
+ .popup-email-wrapper {
+   position: absolute;
+   width: 960px;
+   height: 590px;
+   background-color: var(--basic-white);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .textarea {
+  color: var(--textarea);
+  padding-left: 16px;
+  padding-top: 16px;
+  min-width: 740px;
+}
+
+.user-icon-name {
+  padding: 16px;
+}
+
+.email-icon-user {
+  padding: 16px;
+}
+
+.wrapper-email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-email input[type=text], input[type=email]{
+   min-width: 324px;
+}
+
+.popup-contacts-wrapper {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 319px;
+  height: 308px;
+  top: 50px;
+  z-index: 10;
+  background-color: var(--basic-white);
+}
+
+.heading-email {
+  width: 960px;
+  padding-left: 100px;
+}
+.heading-email h2 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.email-form {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+ /* Makets */
 .maket-popup {
   background-color: var(--basic-gray);
   width: 360px;
@@ -587,49 +741,33 @@ a {
   text-align: center;
   padding-top: 10px;
   margin-top: 26px;
-
 }
 
 .maket-popup h2{
   text-transform: uppercase;
-
 }
-
 
 .maket-popup p{
   margin-bottom: 36px;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+.product-maket{
 
 }
 
-.popup-contacts-wrapper {
-  text-align: center;
-  padding: 45px 0;
-
+.product-maket-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.adress {
-  width: 319px;
-  height: 308px;
-  background-color: var(--basic-white);
-  position: absolute;
-  top: 50px;
-  left: 140px;
-  z-index: 10;
-  opacity: 0;
-
+.product-maket-item{
+  list-style-type: none;
 }
 
-.adress-map:hover .adress {
-  display: block;
-  opacity:1;
-  transition: 1s;
-
-}
-
-.btn-maket{
- padding: 16px 73.5px;
-
-}
 
 /* Filters */
 
@@ -686,91 +824,17 @@ line-height: 22px;
   line-height: 19px;
 }
 
-.product-maket{
-
-}
-
-.product-maket-list{
-
-}
-
-.product-maket-item{
-  list-style-type: none;
-}
+/* Пагинация */
 
 .pagination {
   list-style-type: none;
 
 }
-
-.btn-pagination {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  background-color: var(--basic-gray);
-  border-radius: 3px;
-  margin: 10px 10px;
-  box-sizing: border-box;
-  background: var(--basic-br-gray);
-  border: 3px solid var(--basic-br-gray);
-}
-
-.btn-pagination:hover {
-  background: var(--basic-white);
-  border: 3px solid var(--basic-br-gray);
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.btn-pagination:active {
-  background: var(--basic-active-gray);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-}
-
-.btn-pagination-next {
-  width: 260px;
-  height: 50px;
-  display: inline-block;
-  text-align: center;
-  line-height: 50px;
-  background-color: var(--basic-gray);
-  border-radius: 3px;
-  margin: 10px 10px;
-  box-sizing: border-box;
-  background: var(--basic-br-gray);
-}
-
 .pagination-item {
 
 }
-
 .pagination-item a{
   padding: 0;
-}
-
-
-.btn-show {
-  background-color: var(--basic-gray);
-  width: 260px;
-  height: 50px;
-  line-height: 50px;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  border: none;
-}
-
-.btn-show:hover {
-  cursor: pointer;
-  background-color: var(--basic-hover-gray);
-}
-
-.btn-show:active {
-  background-color: var(--basic-active-gray);
-  opacity: 0.3;
-
 }
 
 .padding-none {

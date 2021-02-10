@@ -21,14 +21,13 @@
           alt="Логотип компании Нёрдс"></a>
       <div class="main-navigation-wrapper">
         <ul class="site-navigation">
-          <li class="navigation-items"><a class="hover-link" href="blank.html">Клиенты</a></li>
-          <li class="navigation-items"><a class="hover-link" href="catalog.html">Магазин</a></li>
-          <li class="navigation-items"><a class="hover-link" href="blank.html">Студия</a></li>
-          <li class="navigation-items"><a class="hover-link" href="blank.html">Контакты</a></li>
+          <li class="navigation-items"><a class="hover-link " href="blank.html">Клиенты</a></li>
+          <li class="navigation-items"><a class="hover-link " href="catalog.html">Магазин</a></li>
+          <li class="navigation-items"><a class="hover-link " href="blank.html">Студия</a></li>
+          <li class="navigation-items"><a class="hover-link " href="blank.html">Контакты</a></li>
         </ul>
       </div>
       <div class="cart">
-        <img src="img/icons/cart.svg" width="32" height="32" alt="shopping cart">
         <a class="shopping_cart hover-link" href="blank.html">Корзина</a>
       </div>
     </nav>
@@ -43,7 +42,7 @@
           Долго, дорого,<br> скрупулезно.
         </h2>
         <p>
-          Математически выверенный дизайн для вашего сайта или мобильного приложения.
+          Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
         </p>
         <a class="button btn-more" href="blank.html">Узнать больше</a>
       </div>
@@ -133,41 +132,68 @@
         </ul>
       </section>
 
-      <div class="adress-map">
-        <div class="adress-map-wrapper">
-          <section class="map-krasnodar">
-            <h2 class="visually-hidden">Карта города Краснодар</h2>
-            <div class="map-krasnodar-wrapper">
-              <img src="img/content/map-main.png" width="1440" height="416" alt="Карта города, как до нас добраться">
-            </div>
-          </section>
-
-          <section class="popup-contacts adress">
-            <div class="popup-contacts-wrapper">
-              <h2>NЁRDS DESIGN STUDIO</h2>
-              <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-              <p class="contacts-phone"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-              <a class="button btn-write" href="blank.html">Напишите нам</a>
-            </div>
-          </section>
+      <section class="popup-contacts adress">
+        <div class="popup-contacts-wrapper">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts-phone"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+          <a class="button btn-write" href="blank.html">Напишите нам</a>
         </div>
-      </div>
+      </section>
+
+      <section class="popup-email hidden-popup-email">
+        <div class="popup-email-wrapper">
+          <div class="heading-email">
+            <h2>Напишите нам</h2>
+          </div>
+          <form class="email-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="wrapper-email">
+              <p>
+                <label for="user-name"><b>Ваше имя:</b></label>
+                <br>
+                <input class="user-icon-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
+              </p>
+              <p>
+                <label for="email-login"><b>Ваш email:</b></label>
+                <br>
+                <input class="email-icon-user" id="email-login" type="email" name="login"
+                  placeholder="email@example.com" required>
+              </p>
+            </div>
+            <p>
+              <label for="comment-field"><b>Текст письма:</b></label>
+              <br>
+              <textarea class="textarea" name="comment" id="comment-field" placeholder="В свободной форме" rows="10"
+                wrap="hard" required></textarea>
+            </p>
+            <button class="button submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
     </div>
   </main>
 
-  <footer class="main-footer container">
-    <section class="footer-social">
-      <h2 class="visually-hidden">Логотипы социальных сетей</h2>
-      <a class="btn-social" href="blank.html"><img class="icon-active" src="img/icons/vk-icon.svg" width="21"
-          height="21" alt="иконка вконтаке"></a>
-      <a class="btn-social" href="blank.html"><img class="icon-active" src="img/icons/fb-icon.svg" width="21"
-          height="21" alt="иконка фейсбук"></a>
-      <a class="btn-social" href="blank.html"><img class="icon-active" src="img/icons/insta-icon.svg" width="21"
-          height="21" alt="иконка инстаграм"></a>
+  <footer class="main-footer">
+    <section class="map-krasnodar">
+      <h2 class="visually-hidden">Карта города Краснодар</h2>
+      <div class="map-krasnodar-wrapper">
+        <img src="img/content/map-main.png" width="1440" height="416" alt="Карта города, как до нас добраться">
+      </div>
     </section>
-    <div class="text-footer">
-      <p class="text-prefer-footer">Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+    <div class="footer-wrapper container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Логотипы социальных сетей</h2>
+        <a class="btn-social" href="blank.html"><img class="icon-active" src="img/icons/vk-icon.svg" width="21"
+            height="21" alt="иконка вконтаке"></a>
+        <a class="btn-social" href="blank.html"><img class="icon-active" src="img/icons/fb-icon.svg" width="21"
+            height="21" alt="иконка фейсбук"></a>
+        <a class="btn-social" href="blank.html"><img class="icon-active" src="img/icons/insta-icon.svg" width="21"
+            height="21" alt="иконка инстаграм"></a>
+      </section>
+      <div class="text-footer">
+        <p class="text-prefer-footer">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
 

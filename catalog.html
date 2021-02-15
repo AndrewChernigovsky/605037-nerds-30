@@ -38,83 +38,83 @@
 
   <main class="container">
     <div class="wrapper-grid-makets">
-      <div class="wrapper-maket-filter">
-        <section class="filter-cost">
+      <section class="filter-cost">
 
-          <h2>Стоимость:</h2>
-          <form class="form-filter">
-            <fieldset class="border-none padding-none">
-              <label class="filter-min">От <input type="text" name="min-interval" value="0"></label>
-              <label class="filter-max">До <input type="text" name="max-interval" value="15000"></label>
+        <h2>Стоимость:</h2>
+        <form class="form-filter">
+          <fieldset class="border-none padding-none">
+            <label class="filter-min">От <input type="text" name="min-interval" value="0"></label>
+            <label class="filter-max">До <input type="text" name="max-interval" value="15000"></label>
 
-              <h2>Сетка</h2>
+            <h2>Сетка</h2>
 
-              <ul class="filter-maket-list">
-                <li class="filter-maket-item">
-                  <input type="radio" name="product-group" value="adaptiv" id="filter-adaptiv">
-                  <label for="filter-adaptiv">Адаптивная</label>
-                </li>
-                <li class="filter-maket-item">
-                  <input type="radio" name="product-group" value="fix" id="filter-fix" checked>
-                  <label for="filter-fix">Фиксированная</label>
-                </li>
-                <li class="filter-maket-item">
-                  <input type="radio" name="product-group" value="'elastic'" id="filter-elastic">
-                  <label for="filter-elastic">Резиновая</label>
-                </li>
-              </ul>
-            </fieldset>
+            <ul class="filter-maket-list">
+              <li class="filter-maket-item">
+                <input type="radio" name="product-group" value="adaptiv" id="filter-adaptiv">
+                <label for="filter-adaptiv">Адаптивная</label>
+              </li>
+              <li class="filter-maket-item">
+                <input type="radio" name="product-group" value="fix" id="filter-fix" checked>
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li class="filter-maket-item">
+                <input type="radio" name="product-group" value="'elastic'" id="filter-elastic">
+                <label for="filter-elastic">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
 
-            <h2>Особенности</h2>
-            <fieldset class="border-none padding-none">
-              <legend class="visually-hidden">Особенности</legend>
-              <ul class="filter-maket-list">
-                <li class="filter-maket-item">
-                  <input type="checkbox" name="slider" id="filter-of-slider" checked>
-                  <label for="filter-of-slider">Слайдер</label>
-                </li>
-                <li class="filter-maket-item">
-                  <input type="checkbox" name="advantage" id="filter-advantage">
-                  <label for="filter-advantage">Блок преимуществ</label>
-                </li>
-                <li class="filter-maket-item">
-                  <input type="checkbox" name="news" id="filter-news" checked>
-                  <label for="filter-news">Новости</label>
-                </li>
-                <li class="filter-maket-item">
-                  <input type="checkbox" name="gallery" id="filter-gallery">
-                  <label for="filter-gallery">Галерея</label>
-                </li>
-                <li class="filter-maket-item">
-                  <input type="checkbox" name="shopping_cart" id="filter-shopping_cart">
-                  <label for="filter-shopping_cart">Корзина</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="btn-show" type="submit">Показать</button>
-          </form>
-        </section>
-        <section class="filter-sort">
-          <h2>Сортировать:</h2>
-          <ul class="filter-sort-list">
-            <li class="filter-sort-item filter-sort-active"><a class="btn">по цене</a></li>
-            <li class="filter-sort-item filter-sort-passive"><a class="btn">по типу</a></li>
-            <li class="filter-sort-item filter-sort-passive"><a class="btn">по названию</a></li>
-            <li class="filter-sort-item">
-              <a class="btn"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" fill="#231F20"/>
-                </svg></a>
-            </li>
-            <li class="filter-sort-item">
-              <a class="btn"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <h2>Особенности</h2>
+          <fieldset class="border-none padding-none">
+            <legend class="visually-hidden">Особенности</legend>
+            <ul class="filter-maket-list">
+              <li class="filter-maket-item">
+                <input type="checkbox" name="slider" id="filter-of-slider" checked>
+                <label for="filter-of-slider">Слайдер</label>
+              </li>
+              <li class="filter-maket-item">
+                <input type="checkbox" name="advantage" id="filter-advantage">
+                <label for="filter-advantage">Блок преимуществ</label>
+              </li>
+              <li class="filter-maket-item">
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-maket-item">
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-maket-item">
+                <input type="checkbox" name="shopping_cart" id="filter-shopping_cart">
+                <label for="filter-shopping_cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn-show" type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="filter-sort">
+        <h2>Сортировать:</h2>
+        <ul class="filter-sort-list">
+          <li class="filter-sort-item filter-sort-active"><a class="btn">по цене</a></li>
+          <li class="filter-sort-item filter-sort-passive"><a class="btn">по типу</a></li>
+          <li class="filter-sort-item filter-sort-passive"><a class="btn">по названию</a></li>
+          <li class="filter-sort-item">
+            <a class="btn"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="#231F20" />
+              </svg></a>
+          </li>
+          <li class="filter-sort-item">
+            <a class="btn"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.2">
-                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
                 </g>
-                </svg></a>
-            </li>
-          </ul>
-        </section>
-      </div>
+              </svg></a>
+          </li>
+        </ul>
+      </section>
       <section class="product-maket">
         <h2 class="visually-hidden">макеты</h2>
         <ul class="product-maket-list">
@@ -125,12 +125,6 @@
               <a class="btn-maket button">9 900 ₽</a>
             </div>
             <div class="maket-browser ">
-              <div class="circle browser">
-              </div>
-              <div class="circle browser-2">
-              </div>
-              <div class="circle browser-3">
-              </div>
             </div>
             <a href="blank.html">
               <p class="visually-hidden">Макет Седона</p>
@@ -143,13 +137,7 @@
               <p>Продуктовый лендинг<br>приложения для iOS и Android для туристов</p>
               <a class="button btn-maket">9 900 ₽</a>
             </div>
-            <div class="maket-browser ">
-              <div class="circle browser">
-              </div>
-              <div class="circle browser-2">
-              </div>
-              <div class="circle browser-3">
-              </div>
+            <div class="maket-browser">
             </div>
             <a href="blank.html">
               <p class="visually-hidden">Макет Пинк</p>
@@ -162,13 +150,7 @@
               <p>Сайт салона красоты.<br>Для мужчин, да.</p>
               <a class="button btn-maket">9 900 ₽</a>
             </div>
-            <div class="maket-browser ">
-              <div class="circle browser">
-              </div>
-              <div class="circle browser-2">
-              </div>
-              <div class="circle browser-3">
-              </div>
+            <div class="maket-browser">
             </div>
             <a href="blank.html">
               <p class="visually-hidden">Макет Бородински</p>
@@ -181,13 +163,7 @@
               <p>Интернет-магазин <br>вязаных игрушек</p>
               <a class="button btn-maket">9 900 ₽</a>
             </div>
-            <div class="maket-browser ">
-              <div class="circle browser">
-              </div>
-              <div class="circle browser-2">
-              </div>
-              <div class="circle browser-3">
-              </div>
+            <div class="maket-browser">
             </div>
             <a href="blank.html">
               <p class="visually-hidden">Макет Мишка</p>
@@ -200,13 +176,7 @@
               <p>Лендинг курсов повышения<br>квалификации</p>
               <a class="button btn-maket">9 900 ₽</a>
             </div>
-            <div class="maket-browser ">
-              <div class="circle browser">
-              </div>
-              <div class="circle browser-2">
-              </div>
-              <div class="circle browser-3">
-              </div>
+            <div class="maket-browser">
             </div>
             <a href="blank.html">
               <p class="visually-hidden">Макет Учебный</p>
@@ -220,12 +190,6 @@
               <a class="button btn-maket">9 900 ₽</a>
             </div>
             <div class="maket-browser ">
-              <div class="circle browser">
-              </div>
-              <div class="circle browser-2">
-              </div>
-              <div class="circle browser-3">
-              </div>
             </div>
             <a href="blank.html">
               <p class="visually-hidden">Макет Кваст</p>
@@ -234,15 +198,15 @@
           </li>
 
         </ul>
-    <ul class="pagination">
-      <li class="pagination-item"><a class="btn-pagination active-pagination">1</a></li>
-      <li class="pagination-item"><a class="btn-pagination" href="blank.html">2</a></li>
-      <li class="pagination-item"><a class="btn-pagination" href="blank.html">3</a></li>
-      <li class="pagination-item-next"><a class="btn-pagination btn-pagination-next" href="blank.html">Следующая</a>
-      </li>
-    </ul>
-    </section>
-  </div>
+        <ul class="pagination">
+          <li class="pagination-item"><a class="btn-pagination active-pagination">1</a></li>
+          <li class="pagination-item"><a class="btn-pagination" href="blank.html">2</a></li>
+          <li class="pagination-item"><a class="btn-pagination" href="blank.html">3</a></li>
+          <li class="pagination-item-next"><a class="btn-pagination btn-pagination-next" href="blank.html">Следующая</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
   <footer class="main-footer">
     <section class="map container">

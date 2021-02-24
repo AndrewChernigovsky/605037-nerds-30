@@ -103,9 +103,20 @@ a {
   padding: 0 10px;
 
 }
-.visually-hidden {
-  visibility: hidden;
-  display: none;
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main {
@@ -117,6 +128,8 @@ a {
   /* display: grid; */
   display: flex;
   justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 52px;
 
 }
 
@@ -825,7 +838,7 @@ a {
   height: 52px;
   background-color:var(--basic-gray);
   opacity: 1;
-  right: 40px;
+  right: -42px;
 }
 
 .partnership-item:nth-child(4n+4)::after{
@@ -1066,9 +1079,9 @@ a {
 .product-maket-list{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 72px 0px;
+  gap: 67px 0px;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 72px;
 }
 
 
@@ -1211,11 +1224,96 @@ opacity: 1;
 }
 
 .filter-sort-item:nth-child(4){
-  margin-right: 13px;
+  margin-right: 20px;
 }
 
 .filter-sort-item:last-child{
   margin-right: 0px;
+}
+
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding: 39px 20px 0px 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: #00CA74;
+}
+
+.toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  border: 8px solid var(--basic-white);
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 18px;
+}
+
+.toggle-max {
+  left: 160px;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 80px;
+  height: 32px;
+  background-color: var(--basic-gray);
+  border: none;
+  border-radius: 5px;
+  color: #28316;
+  text-align: center;
+  margin-left: 10px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Пагинация */
@@ -1238,7 +1336,7 @@ opacity: 1;
 
 .link-nav-active {
   border-bottom: 2px solid var(--basic-red);
-  padding-bottom: 13px;
+  padding-bottom: 18px;
 }
 
 .pagination-item {

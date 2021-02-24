@@ -22,9 +22,9 @@
             alt="Логотип компании Нёрдс"></a>
         <div class="main-navigation-wrapper">
           <ul class="site-navigation">
+            <li class="navigation-items"><a class="hover-link" href="index.html">Студия</a></li>
             <li class="navigation-items"><a class="hover-link" href="blank.html">Клиенты</a></li>
             <li class="navigation-items"><a class="hover-link link-nav-active" href="catalog.html">Магазин</a></li>
-            <li class="navigation-items"><a class="hover-link" href="index.html">Студия</a></li>
             <li class="navigation-items"><a class="hover-link" href="blank.html">Контакты</a></li>
           </ul>
         </div>
@@ -42,11 +42,31 @@
     <div class="wrapper-grid-makets">
       <section class="filter-cost">
 
-        <h2>Стоимость:</h2>
-        <form class="form-filter">
-          <fieldset class="border-none padding-none">
-            <label class="filter-min">От <input type="text" name="min-interval" value="0"></label>
-            <label class="filter-max">До <input type="text" name="max-interval" value="15000"></label>
+        <h2 class="visually-hidden">Стоимость:</h2>
+        <form class="form-filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%;">
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 20%;"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 50%;"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    От <input type="number" name="min-price" value="0" min="0" >
+                  </label>
+                  <label class="max-price">
+                    До <input type="number" name="max-price" value="15000" max="15000">
+                  </label>
+
+                </div>
+              </div>
+
+
 
             <h2>Сетка</h2>
 
@@ -66,9 +86,9 @@
             </ul>
           </fieldset>
 
-          <h2>Особенности</h2>
+          <h2 class="visually-hidden">Особенности</h2>
           <fieldset class="border-none padding-none">
-            <legend class="visually-hidden">Особенности</legend>
+            <legend>Особенности</legend>
             <ul class="filter-maket-list">
               <li class="filter-maket-item">
                 <input type="checkbox" name="slider" id="filter-of-slider" checked>

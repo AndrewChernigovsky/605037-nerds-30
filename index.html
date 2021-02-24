@@ -17,38 +17,72 @@
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html"><img src="img/logo/logo-main-header.svg" width="160" height="65"
+
+        <a class="main-header-logo" href="index.html"><img src="img/logo/nerds-logo.png" width="160" height="65"
             alt="Логотип компании Нёрдс"></a>
         <div class="main-navigation-wrapper">
           <ul class="site-navigation">
+            <li class="navigation-items"><a class="hover-link link-nav-active" href="blank.html">Студия</a></li>
             <li class="navigation-items"><a class="hover-link " href="blank.html">Клиенты</a></li>
             <li class="navigation-items"><a class="hover-link " href="catalog.html">Магазин</a></li>
-            <li class="navigation-items"><a class="hover-link link-nav-active" href="blank.html">Студия</a></li>
             <li class="navigation-items"><a class="hover-link " href="blank.html">Контакты</a></li>
           </ul>
         </div>
         <div class="cart">
           <a class="shopping_cart hover-link" href="blank.html">Корзина</a>
         </div>
+
       </nav>
     </div>
   </header>
 
   <main class="main">
     <h1 class="visually-hidden"> УТП - почему нас стоит выбрать?</h1>
-    <section class="slide-first-advantage">
-      <h2 class="visually-hidden">Описание преимуществ компании</h2>
-      <div class="container slide-wrapper">
-        <h2>
-          Долго, дорого,<br> скрупулезно.
-        </h2>
-        <p>
-          Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
-        </p>
-        <a class="button btn-more" href="blank.html">Узнать больше</a>
-      </div>
 
-    </section>
+    <div class="site-wrapper">
+      <div class="container site-wrapper-1">
+        <section class="slider">
+          <h2 class="visually-hidden">Описание преимуществ компании</h2>
+          <ul>
+            <li class="slider-item slide slide-current">
+              <h2 class="slide-title">
+                Долго, дорого,<br>скрупулезно.
+              </h2>
+              <p>
+                Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
+              </p>
+              <a class="button slide-button btn-more" href="blank.html">Узнать больше</a>
+            </li>
+
+            <li class="slider-item slide">
+              <h2 class="slide-title">
+                Любим математику<br>как никто другой
+              </h2>
+              <p>
+                Никакого креатива, только математические формулы
+                <br>для расчета идеальных пропорций
+              </p>
+              <a class="button slide-button btn-more" href="blank.html">Узнать больше</a>
+            </li>
+
+            <li class="slider-item slide ">
+              <h2 class="slide-title">Только ночь<br>только хардкор
+              </h2>
+              <p>
+                Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
+              </p>
+              <a class="button slide-button btn-more" href="blank.html">Узнать больше</a>
+            </li>
+          </ul>
+          <div class="slider-controls">
+            <button class="current" type="button" aria-label="Первый слайд"></button>
+            <button class="" type="button" aria-label="Второй слайд"></button>
+            <button class="" type="button" aria-label="Третий слайд"></button>
+          </div>
+        </section>
+      </div>
+    </div>
+
     <div class="container">
       <section class="services container">
         <h2 class="visually-hidden">Услуги</h2>
@@ -81,7 +115,7 @@
         <section class="features">
           <h2>Мы — маленькая, но гордая<br>
             дизайн-студия из Краснодара.</h2>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не
+          <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет<br>превыше креатива.Работаем не
             покладая рук, как роботы.</p>
           <h3>Выполняем заказы на разработку:</h3>
           <ul class="features-list">
@@ -93,20 +127,20 @@
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <a href="index.html"><img src="img/content/nerds-main.png" width="352" height="220"
+          <a class="link-logo-adavantages" href="index.html"><img src="img/content/nerds-main.png" width="352" height="220"
               alt="Логотип компании Нёрдс"></a>
           <h3>с 2004 года Любим точность во всем:</h3>
           <ul class="advantages-list">
             <li class="advantages-item">
-              146<sup>%</sup>
+              <p>146<sup>%</sup></p>
               <p>Уровень<br>самоотдачи</p>
             </li>
             <li class="advantages-item">
-              100<sup>%</sup>
+              <p>100<sup>%</sup></p>
               <p>Соблюдение<br>сроков</p>
             </li>
             <li class="advantages-item">
-              50<sup>%</sup>
+              <p>50<sup>%</sup></p>
               <p>Минимальная<br>предоплата</p>
             </li>
           </ul>
@@ -119,11 +153,11 @@
           <li class="partnership-item"><a href="blank.html"><img src="img/logo/logo-htmlacademy.svg" width="199"
                 height="68" alt="Логотип компании htmlacademy"></a></li>
           <li class="partnership-item"><a href="blank.html"><img src="img/logo/logo-barbershop.png" width="209"
-                height="90" alt="Логотип компании Pink"></a></li>
+                height="90" alt="Логотип компании Бородински"></a></li>
           <li class="partnership-item"><a href="blank.html"><img src="img/logo/logo-pink.png" width="185" height="52"
-                alt="Логотип компании Мишка"></a></li>
+                alt="Логотип компании Pink"></a></li>
           <li class="partnership-item"><a href="blank.html"><img src="img/logo/logo-mishka.png" width="173" height="84"
-                alt="Логотип компании Бородински"></a></li>
+                alt="Логотип компании Мишка"></a></li>
         </ul>
       </section>
 
@@ -166,8 +200,9 @@
       <h2 class="visually-hidden">Карта города Краснодар</h2>
       <div class="popup-contacts-wrapper">
         <div class="popup-contacts">
-          <h2>NЁRDS DESIGN STUDIO</h2>
           <div class="wrapper-contacts">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+
             <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
             <p class="contacts-phone"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
           </div>

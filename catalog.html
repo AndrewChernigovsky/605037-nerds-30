@@ -22,7 +22,7 @@
             alt="Логотип компании Нёрдс"></a>
         <div class="main-navigation-wrapper">
           <ul class="site-navigation">
-            <li class="navigation-items"><a class="hover-link" href="index.html">Студия</a></li>
+            <li class="navigation-items"><a class="hover-link" href="blank.html">Студия</a></li>
             <li class="navigation-items"><a class="hover-link" href="blank.html">Клиенты</a></li>
             <li class="navigation-items"><a class="hover-link link-nav-active" href="catalog.html">Магазин</a></li>
             <li class="navigation-items"><a class="hover-link" href="blank.html">Контакты</a></li>
@@ -66,48 +66,47 @@
                 </div>
               </div>
 
-
-
-            <h2>Сетка</h2>
-
+          <h2 class="visually-hidden">Сетка</h2>
+          <fieldset class="filter-item">
+            <legend>Сетка:</legend>
             <ul class="filter-maket-list">
-              <li class="filter-maket-item">
-                <input type="radio" name="product-group" value="adaptiv" id="filter-adaptiv">
+              <li class="filter-maket-item filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="adaptiv" id="filter-adaptiv">
                 <label for="filter-adaptiv">Адаптивная</label>
               </li>
-              <li class="filter-maket-item">
-                <input type="radio" name="product-group" value="fix" id="filter-fix" checked>
+              <li class="filter-maket-item filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="fix" id="filter-fix" checked>
                 <label for="filter-fix">Фиксированная</label>
               </li>
-              <li class="filter-maket-item">
-                <input type="radio" name="product-group" value="'elastic'" id="filter-elastic">
+              <li class="filter-maket-item filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="'elastic'" id="filter-elastic">
                 <label for="filter-elastic">Резиновая</label>
               </li>
             </ul>
           </fieldset>
 
           <h2 class="visually-hidden">Особенности</h2>
-          <fieldset class="border-none padding-none">
+          <fieldset class="filter-features">
             <legend>Особенности</legend>
             <ul class="filter-maket-list">
-              <li class="filter-maket-item">
-                <input type="checkbox" name="slider" id="filter-of-slider" checked>
+              <li class="filter-maket-item  filter-option filter-checkbox">
+                <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-of-slider" checked>
                 <label for="filter-of-slider">Слайдер</label>
               </li>
-              <li class="filter-maket-item">
-                <input type="checkbox" name="advantage" id="filter-advantage">
+              <li class="filter-maket-item  filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantage" id="filter-advantage">
                 <label for="filter-advantage">Блок преимуществ</label>
               </li>
-              <li class="filter-maket-item">
-                <input type="checkbox" name="news" id="filter-news" checked>
+              <li class="filter-maket-item  filter-option filter-checkbox">
+                <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
-              <li class="filter-maket-item">
-                <input type="checkbox" name="gallery" id="filter-gallery">
+              <li class="filter-maket-item  filter-option filter-checkbox">
+                <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
-              <li class="filter-maket-item">
-                <input type="checkbox" name="shopping_cart" id="filter-shopping_cart">
+              <li class="filter-maket-item  filter-option filter-checkbox">
+                <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="shopping_cart" id="filter-shopping_cart">
                 <label for="filter-shopping_cart">Корзина</label>
               </li>
             </ul>
@@ -158,7 +157,7 @@
                 <a class="" href="blank.html">
                   <h2>Pink App</h2>
                 </a>
-                <p>Продуктовый лендинг<br>приложения для iOS и Android для туристов</p>
+                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
                 <a class="button btn-maket">9 900 ₽</a>
               </div>
               <img src="img/content/maket-pink.jpg" width="358" height="578" alt="Макет_Пинк">
@@ -229,8 +228,8 @@
       <h2 class="visually-hidden">Карта города Краснодар</h2>
       <div class="popup-contacts-wrapper">
         <div class="popup-contacts">
-          <h2>NЁRDS DESIGN STUDIO</h2>
           <div class="wrapper-contacts">
+            <h2>NЁRDS DESIGN STUDIO</h2>
             <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
             <p class="contacts-phone"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
           </div>

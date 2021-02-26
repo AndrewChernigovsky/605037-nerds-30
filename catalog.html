@@ -57,10 +57,10 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    От <input type="number" name="min-price" value="0" min="0" >
+                    От <input type="text" name="min-price" value="0" min="0" >
                   </label>
                   <label class="max-price">
-                    До <input type="number" name="max-price" value="15000" max="15000">
+                    До <input type="text" name="max-price" value="15 000" max="15000">
                   </label>
 
                 </div>
@@ -79,7 +79,7 @@
                 <label for="filter-fix">Фиксированная</label>
               </li>
               <li class="filter-maket-item filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="'elastic'" id="filter-elastic">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="'elastic'" id="filter-elastic" disabled checked>
                 <label for="filter-elastic">Резиновая</label>
               </li>
             </ul>
@@ -106,7 +106,7 @@
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li class="filter-maket-item  filter-option filter-checkbox">
-                <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="shopping_cart" id="filter-shopping_cart">
+                <input class="visually-hidden  filter-input-checkbox filter-input" type="checkbox" name="shopping_cart" id="filter-shopping_cart" disabled checked>
                 <label for="filter-shopping_cart">Корзина</label>
               </li>
             </ul>
@@ -117,22 +117,24 @@
       <section class="filter-sort">
         <h2>Сортировать:</h2>
         <ul class="filter-sort-list">
-          <li class="filter-sort-item filter-sort-active"><a class="btn">по цене</a></li>
-          <li class="filter-sort-item filter-sort-passive"><a class="btn">по типу</a></li>
-          <li class="filter-sort-item filter-sort-passive"><a class="btn">по названию</a></li>
+          <li class="filter-sort-item"><a class="btn-sort">по цене</a></li>
+          <li class="filter-sort-item"><a class="btn-sort">по типу</a></li>
+          <li class="filter-sort-item"><a class="btn-sort">по названию</a></li>
           <li class="filter-sort-item">
-            <a class="btn"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+            <a class="btn-sort">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="#231F20" />
-              </svg></a>
+              </svg>
+            </a>
           </li>
           <li class="filter-sort-item">
-            <a class="btn"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+            <a class="btn-sort">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.2">
                   <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
-                </g>
-              </svg></a>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -214,7 +216,7 @@
         </ul>
 
         <ul class="pagination">
-          <li class="pagination-item"><a class="btn-pagination active-pagination">1</a></li>
+          <li class="pagination-item"><a class="active-pagination">1</a></li>
           <li class="pagination-item"><a class="btn-pagination" href="blank.html">2</a></li>
           <li class="pagination-item"><a class="btn-pagination" href="blank.html">3</a></li>
           <li class="pagination-item-next"><a class="btn-pagination btn-pagination-next" href="blank.html">Следующая</a>

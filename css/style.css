@@ -1204,7 +1204,16 @@ input[type="radio"].visually-hidden {
   margin-top: 32px;
   margin-bottom: -6px;
 }
+.btn-maket-heading:hover {
+  color: var(--basic-red);
+  transition: 1s;
+}
 
+.btn-maket-heading:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+  transition: 0s;
+}
 
 .maket-popup:active h2{
   color: var(--basic-black);
@@ -1344,17 +1353,16 @@ input[type="radio"].visually-hidden {
 
 .filter-sort-list{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   padding: 0;
   max-width: 48%;
   min-width: 358px;
-
 }
 
 .filter-sort-item{
   list-style-type: none;
-  margin-right: 7%;
+  margin-right: 20px;
   margin-bottom: 3%;
   line-height: 18px;
   font-size: 14px;

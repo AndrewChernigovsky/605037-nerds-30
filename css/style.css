@@ -75,6 +75,7 @@ a {
 }
 
 .page-body {
+  position: relative;
   background-color: var(--basic-white);
   min-width: 1160px;
   margin: 0;
@@ -213,9 +214,9 @@ input[type="radio"].visually-hidden {
   width: 700px;
   margin-bottom: 0px;
   margin-top: 57px;
-  font-size: 52px;
+  font-size: 55px;
   line-height: 55px;
-  font-weight: 700;
+  font-weight: 500;
   max-width: 33%;
 }
 
@@ -409,7 +410,16 @@ input[type="radio"].visually-hidden {
   height: 50px;
   border-radius: 3px;
   margin-top: 20px;
+  border: none;
 }
+
+
+.submit button:active, button:focus {
+  outline: none;
+  decoration: none;
+
+}
+
 .submit:hover {
   background-color: var(--basic-hover-red);
   }
@@ -736,8 +746,8 @@ input[type="radio"].visually-hidden {
 
 }
 .features h2 {
-  font-weight: 700;
-  font-size: 43px;
+  font-weight: 500;
+  font-size: 45px;
   line-height: 45px;
   margin: 76px 0px 0px 0px;
   max-width: 83%;
@@ -799,7 +809,7 @@ input[type="radio"].visually-hidden {
 
 .advantages h3 {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   margin: 25px 0px 0px 0px;
@@ -947,7 +957,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer p:first-child {
-  margin-top: 26px;
+  margin-top: 14px;
 }
 
 .footer-social {
@@ -987,15 +997,14 @@ input[type="radio"].visually-hidden {
   min-width: 66%;
 }
 .text-footer p:nth-child(2){
-  letter-spacing: 0.5px;
-  margin-top: 14px;
+  margin-top: 8px;
   max-width: 70%;
 }
 
 
 .text-prefer-footer {
-  font-size: 35px;
-  line-height: 26px;
+  font-size: 36px;
+  line-height: 36px;
   margin-bottom: 0;
   font-weight: 700;
 }
@@ -1094,18 +1103,16 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-contacts h2 {
-  margin-top: 18px;
-  font-size: 19px;
-  letter-spacing: -1.8px;
-  margin-bottom: 45px;
+  margin-top: 9px;
+  font-size: 18px;
+  margin-bottom: 42px;
   max-height: 17%;
-  line-height: 22px;
+  line-height: 30px;
   max-width: 100%;
 
 }
 
 .popup-email {
-  position: relative;
   display: flex;
   justify-content: center;
  }
@@ -1115,12 +1122,15 @@ input[type="radio"].visually-hidden {
  }
 
  .popup-email-wrapper {
-   position: absolute;
+   position: fixed;
+   top: -71px;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: auto;
    width: 960px;
    height: 564px;
-   z-index: 12;
-   left: 100px;
-   top: -143px;
+   z-index: 21;
    background-color: var(--basic-white);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  }

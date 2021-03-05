@@ -340,10 +340,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-black);
-}
-
 .site-navigation-current::after {
   content: "";
   position: absolute;
@@ -1543,8 +1539,6 @@ input[type="radio"].visually-hidden {
   width: 26px;
   height: 26px;
   background-image: url("../img/content/checkboxon.svg");
-  /* border-radius: 50%;
-  background-color: var(--basic-darkgray); */
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 1;

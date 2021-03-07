@@ -169,7 +169,7 @@
 
 
 
-      <section class="popup-email hidden-popup-email">
+      <!-- <section class="popup-email">
         <div class="popup-email-wrapper">
           <div class="heading-email">
             <h2>Напишите нам</h2>
@@ -184,7 +184,7 @@
               <p>
                 <label for="email-login"><b>Ваш email:</b></label>
                 <br>
-                <input class="email-icon-user" id="email-login" type="email" name="login"
+                <input class="email-icon-user" id="email-login" type="email" name="email"
                   placeholder="email@example.com" required>
               </p>
             </div>
@@ -198,7 +198,7 @@
           </form>
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </div>
-      </section>
+      </section> -->
     </div>
   </main>
 
@@ -212,7 +212,7 @@
             <p><a href="" aria-label="Мы находимся по адресу 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</a></p>
             <p class="contacts-phone"><a href="tel:+78122757575" aria-label="Телефон для дополнительной информации, звонить по номеру +7 812 275 75">тел. +7 (812) 275-75-75</a></p>
           </div>
-          <a class="button btn-write" href="blank.html">Напишите нам</a>
+          <a class="button btn-write">Напишите нам</a>
         </div>
       </div>
       <div class="map-wrapper">
@@ -236,6 +236,40 @@
     </div>
   </footer>
 
+
+  <section class="popup-email">
+    <div class="popup-email-wrapper">
+      <div class="heading-email">
+        <h2>Напишите нам</h2>
+      </div>
+      <form class="email-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="wrapper-email">
+          <p>
+            <label for="user-name"><b>Ваше имя:</b></label>
+            <br>
+            <input class="user-icon-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          </p>
+          <p>
+            <label for="email-login"><b>Ваш email:</b></label>
+            <br>
+            <input class="email-icon-user" id="email-login" type="email" name="email"
+              placeholder="email@example.com" required>
+          </p>
+        </div>
+        <p>
+          <label for="comment-field"><b>Текст письма:</b></label>
+          <br>
+          <textarea class="textarea" name="comment" id="comment-field" placeholder="В свободной форме" rows="6"
+            cols="80" wrap="hard" required></textarea>
+        </p>
+        <button class="button submit" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </div>
+  </section>
+
+  <script src="js/popup.min.js"></script>
+  <!-- <script src="js/popup.js"></script> -->
 </body>
 
 </html>

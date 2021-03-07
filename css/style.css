@@ -950,6 +950,7 @@ input[type="radio"].visually-hidden {
 /* Footer */
 
 .main-footer {
+  z-index: 1;
 }
 
 .main-footer p:first-child {
@@ -984,6 +985,7 @@ input[type="radio"].visually-hidden {
 .map-wrapper img {
   min-width: 1440px;
   position: relative;
+  z-index: 0;
 
 }
 
@@ -1015,37 +1017,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   cursor: pointer;
   background-color: transparent;
+  animation: bounce 0.6s;
 }
-
-/* .modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 19px;
-  height: 3px;
-  background-color: var(--basic-red);
-  opacity: 0.3;
-} */
-
-/* .modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after{
-  transform: rotate(-45deg);
-} */
-
-/* .modal-close::before:hover,
-.modal-close::after:hover {
-  opacity: 1;
-}
-
-.modal-close::before:active,
-.modal-close::after:active {
-  opacity: 0.1;
-} */
 
 .modal-close::after {
   content: "";
@@ -1080,6 +1053,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 10px;
   left: -210px;
+  z-index: 1;
 }
 .wrapper-contacts{
   text-align: left;
@@ -1087,6 +1061,7 @@ input[type="radio"].visually-hidden {
   width: 68%;
   min-height: 53%;
   word-break: break-all;
+  z-index: 1;
 }
 
 .wrapper-contacts p:first-of-type{
@@ -1111,10 +1086,17 @@ input[type="radio"].visually-hidden {
 .popup-email {
   display: flex;
   justify-content: center;
+  display: none;
+  z-index: 100;
  }
 
- .hidden-popup-email {
-   display: none;
+ .modal-show {
+   display: block;
+   animation: bounce  0.6s;
+ }
+
+ .modal-error {
+  animation: shake 0.6s;
  }
 
  .popup-email-wrapper {
@@ -1126,7 +1108,7 @@ input[type="radio"].visually-hidden {
    margin: auto;
    width: 960px;
    height: 564px;
-   z-index: 21;
+   z-index: 51;
    background-color: var(--basic-white);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  }
@@ -1159,6 +1141,7 @@ input[type="radio"].visually-hidden {
 .map {
   position: relative;
   margin-top: -32px;
+  z-index: 0;
 }
 
 .popup-contacts {
@@ -1618,4 +1601,40 @@ input[type="radio"].visually-hidden {
 
 .padding-none {
   padding: 0;
+}
+
+/* Animation */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-800px);
+  }
+  50% {
+    transform: translateY(-1px);
+  }
+  100%  {
+    transform: translateY(-800px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

@@ -11,26 +11,11 @@ let isStorageSupport = true;
 let storage = "";
 
 try {
-  storage = localStorage.getItem("userName");
+  storage = localStorage.getItem("userEmail");
 } catch (err) {
   isStorageSupport = false;
 
 }
-
-
-popupForm.addEventListener("submit", function (evt){
-  if (!userName.value || !userEmail.value || !userComment.value){
-  evt.preventDefault();
-  popupEmail.classList.remove("modal-error");
-  loginPopup.offsetWidth = loginPopup.offsetWidth;
-  popupEmail.classList.add("modal-error");
-  console.log("Нужно ввести имя эмайл и написать текст");
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("userName", userName.value);
-    }
-  }
-});
 
 popupEmailLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -43,19 +28,33 @@ popupEmailLink.addEventListener("click", function (evt) {
       userEmail.value = storage;
       userName.focus();
     } else {
-      userComment.focus()
+      userComment.focus();
     }
   };
 });
 
 popupEmailClose.addEventListener("click", function(evt){
   evt.preventDefault();
+  popupEmail.classList.remove("modal-error");
+  popupEmail.classList.remove("modal-show");
   console.log("закрыть");
-  if (popupEmailClose) {
-    popupEmail.classList.remove("modal-show");
-    popupEmail.classList.remove("modal-error");
-  };
 });
+
+popupForm.addEventListener("submit", function (evt){
+  if (!userName.value || !userEmail.value || !userComment.value){
+  evt.preventDefault();
+  popupEmail.classList.remove("modal-error");
+  popupEmail.offsetWidth = popupEmail.offsetWidth;
+  popupEmail.classList.add("modal-error");
+  console.log("Нужно ввести имя эмайл и написать текст");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("userEmail", userEmail.value);
+    }
+  }
+});
+
+
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

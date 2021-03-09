@@ -953,6 +953,11 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
+.map-iframe{
+ width: 100%;
+}
+
+
 .main-footer p:first-child {
   margin-top: 14px;
 }
@@ -969,6 +974,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map-wrapper{
+
   position: relative;
   display: flex;
   justify-content: center;

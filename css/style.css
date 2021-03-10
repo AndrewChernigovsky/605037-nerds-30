@@ -957,6 +957,30 @@ input[type="radio"].visually-hidden {
  width: 100%;
 }
 
+.map-wrapper{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: var(--basic-white);
+  z-index: 0;
+}
+
+.map-wrapper iframe{
+  z-index: 0;
+  width: 100%;
+
+}
+
+.map {
+  background-image: url("../img/content/map-main.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
 .main-footer p:first-child {
   margin-top: 14px;
@@ -973,18 +997,7 @@ input[type="radio"].visually-hidden {
 
 }
 
-.map-wrapper{
 
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: var(--basic-white);
-  z-index: 0;
-}
 
 .text-footer {
   display: flex;
